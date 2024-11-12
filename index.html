@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>przelicznik mili i km</title>
+</head>
+<body>
+    <header>
+        <h1>PRZELICZNIK MIL I KILOMETROW</h1>
+    </header>
+    <script>
+        const jednostka  = prompt("podaj jaka jednostke chcesz przeliczyc (km/mile) ")
+        const ilosc = prompt('podaj ilosc do przeliczenia: ')
+            if (jednostka === 'km'){
+                const mile = ilosc / 1.61;
+                document.write(ilosc + ' kilometrow to ' + mile.toFixed(2) + 'mil');
+            } else if (jednostka === 'mile') {
+                const km = ilosc * 1.61;
+                document.write(ilosc + ' mil to ' + km.toFixed(2) + ' kilometrów')
+            } else {
+                document.write('nieprawidlowa jednostka')
+            } 
+    </script>
+</body>
+</html>
